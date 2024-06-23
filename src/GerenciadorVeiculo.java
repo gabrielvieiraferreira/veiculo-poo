@@ -133,10 +133,10 @@ public class GerenciadorVeiculo {
                         scanner.nextLine(); // Consumir a quebra de linha
 
                         if (tipo == 1) {
-                            Carro carro = new Carro(0, marca, modelo, detalhe); // ID será gerado pelo banco
+                            Carro carro = new Carro(0, marca, modelo, detalhe); 
                             gerenciador.adicionarVeiculo(carro);
                         } else {
-                            Moto moto = new Moto(0, marca, modelo, detalhe); // ID será gerado pelo banco
+                            Moto moto = new Moto(0, marca, modelo, detalhe);
                             gerenciador.adicionarVeiculo(moto);
                         }
                         break;
@@ -162,7 +162,7 @@ public class GerenciadorVeiculo {
                     case 4:
                         System.out.println("ID do Veículo: ");
                         id = scanner.nextInt();
-                        scanner.nextLine(); // Consumir a quebra de linha
+                        scanner.nextLine(); 
                         gerenciador.deletarVeiculo(id);
                         break;
                     case 5:
